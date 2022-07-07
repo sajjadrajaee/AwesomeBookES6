@@ -1,17 +1,8 @@
+import storedData from './modules/storedata.js';
+import getData from './modules/getdata.js';
+
 const displayBook = document.querySelector('.display-Books');
 const form = document.querySelector('form');
-
-function storedData(book) {
-  localStorage.setItem('form', JSON.stringify(book));
-}
-
-function getData() {
-  const receivedData = localStorage.getItem('form');
-  if (receivedData) {
-    return JSON.parse(receivedData);
-  }
-  return JSON.parse(receivedData);
-}
 
 let books = [];
 
