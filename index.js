@@ -13,7 +13,7 @@ class Book {
     this.author = author;
   }
 
-  addBook() {
+  addBook = () => {
     const id = books.length + 1;
 
     books.push(new Book(this.title, this.author, id));
@@ -25,7 +25,7 @@ class Book {
   }
 }
 
-function displayBooks() {
+const displayBooks = () => {
   const allBooks = getData();
   if (allBooks) {
     books = allBooks;
@@ -41,7 +41,7 @@ function displayBooks() {
     );
     index += 1;
   });
-}
+};
 
 form.addEventListener('submit', (e) => {
   const title = document.querySelector('#title').value;
