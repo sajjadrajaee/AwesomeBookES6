@@ -1,5 +1,8 @@
 import storedData from './modules/storedata.js';
 import getData from './modules/getdata.js';
+import displayDateTime from './modules/date.js';
+
+displayDateTime();
 
 const displayBook = document.querySelector('.display-Books');
 const form = document.querySelector('form');
